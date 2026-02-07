@@ -1,0 +1,33 @@
+- ros_topic_name: "clock"
+  gz_topic_name: "clock"
+  ros_msg_type: "rosgraph_msgs/msg/Clock"
+  gz_msg_type: "gz_msgs.Clock"
+  direction: "GZ_TO_ROS"
+
+# gz topic published by JointState Plugin
+- ros_topic_name: "joint_states"
+  gz_topic_name: "joint_states"
+  ros_msg_type: "sensor_msgs/msg/JointState"
+  gz_msg_type: "gz_msgs.Model"
+  direction: "GZ_TO_ROS"
+
+  # gz topic published by DiffDrive Plugin
+- ros_topic_name: "odom"
+  gz_topic_name: "odom"
+  ros_msg_type: "nav_msgs/msg/Odometry"
+  gz_msg_type: "gz_msgs.Odometry"
+  direction: "GZ_TO_ROS"
+
+  # gz topic published by DiffDrive Plugin
+- ros_topic_name: "tf"
+  gz_topic_name: "tf"
+  ros_msg_type: "tf2_msgs/msg/TFMessage"
+  gz_msg_type: "gz_msgs.TFMessage"
+  direction: "GZ_TO_ROS"
+
+  # gz topic published by DiffDrive Plugin
+- ros_topic_name: "cmd_vel"
+  gz_topic_name: "cmd_vel"
+  ros_msg_type: "geometry_msgs/msg/Twist"
+  gz_msg_type: "gz_msgs.Twist"
+  direction: "ROS_TO_GZ"
